@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_OrangeHRM/li_Aaron A Andrew",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027A\u0027])[4]/following::li[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "li.ac_even.ac_over",
+      "proposedLocatorMethod": "CSS",
+      "recoveryMethod": "CSS",
+      "pathToScreenshot": "Reports/20210601_101843/ProjectTE/20210601_101843/Object Repository/Page_OrangeHRM/li_Aaron A Andrew_CSS.png"
+    }
+  ]
+}
