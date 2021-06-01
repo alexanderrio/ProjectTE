@@ -48,3 +48,16 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input__s
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input__btnSave'))
 
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Welcome Paul'))
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Logout'))
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_LOGIN Panel_txtUsername'), test)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_txtPassword'), 'o+tS4OuGt32s9ezZj287yw==')
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input_Password_Submit'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Welcome Aaron'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Logout'))
+
+WebUI.closeBrowser()
