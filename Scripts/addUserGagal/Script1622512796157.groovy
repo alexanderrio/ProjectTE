@@ -17,3 +17,44 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/')
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_LOGIN Panel_txtUsername'), 'admin')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_txtPassword'), 'hUKwJTbofgPU9eVlw/CnDQ==')
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input_Password_Submit'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/b_Admin'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input_Status_btnAdd'))
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUseremployeeNameempName'), 'yesman')
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUseruserName'), 'test12345')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUserpassword'), 'o+tS4OuGt32s9ezZj287yw==')
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/ol_User Role   AdminESSEmployee Name   Empl_b1414c'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUserconfirmPassword'), 'o+tS4OuGt32s9ezZj287yw==')
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/Page_OrangeHRM/li_Employee Name   Employee does not exist _a85856'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input__btnSave'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Welcome Paul'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Logout'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/span_Username'))
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_LOGIN Panel_txtUsername'), 'test12345')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_txtPassword'), 'o+tS4OuGt32s9ezZj287yw==')
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input_Password_Submit'))
+
+WebUI.closeBrowser()
