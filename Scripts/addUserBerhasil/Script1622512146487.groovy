@@ -32,3 +32,19 @@ WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input_Password_Subm
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/b_Admin'))
 
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input_Status_btnAdd'))
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUseremployeeNameempName'), 'Aaliyah Haq')
+
+//WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/li_Aaron A Andrew'))
+
+String test = "Aaron"+ Integer.toString(((new Random().nextInt(1000))+1))
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUseruserName'), test)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUserpassword'), 'o+tS4OuGt32s9ezZj287yw==')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input__systemUserconfirmPassword'), 'o+tS4OuGt32s9ezZj287yw==')
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input__btnSave'))
+
+WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/a_Welcome Paul'))
